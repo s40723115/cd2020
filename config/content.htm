@@ -13,13 +13,18 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>python３．８２更新</h1>
+<h1>python３８２更新</h1>
 <ol style="list-style-type: upper-roman;">
 <li style="text-align: left;"><span>首先到" https://www.python.org/downloads/release/python-382/ "下載Window x86-64 executable installer，下載完後，執行python-3.8.2-amd64.exe </span></li>
 <li style="text-align: left;"><span>選Customize installation，再uncheck pip option，就可以繼續安裝置完成。</span></li>
 <li><span>進入安裝號的對應目錄複製檔案到 " 201906_fall/data"</span></li>
 <li>SciTE下載: 從 " <a href="https://www.scintilla.org/SciTEDownload.html">https://www.scintilla.org/SciTEDownload.html</a> " 下載 "<span> </span><a href="https://www.scintilla.org/wscite432.zip">full 64-bit download</a> " 載完病解壓縮後，搬移至data下(有需要的話)，接著到相應的目錄執行SciTE.exe，開啟後到 OPTION&gt;&gt;&gt;OPEN GLOBAL OPTION FILE進行切換到UTF-8編碼即開啟即時更新:                                                                                                            <span>將code.page=0更改成code.page=65001(切換到UTF-8編碼)                                      將#load.on.activate=1的井字號拿掉(開啟即時更新)，儲存，關閉SciTE。 </span></li>
-<li><span>ＭＳＹＳ２：<a href="https://www.msys2.org/">https://www.msys2.org/</a><span><span> 　下載msys2-x86_64-20190524.exe 並執行　，點選Ｂｒｏｗｓｅ，選擇２０１９０６＿ｆａｌｌ／ｄａｔａ後，就可開始安裝，安裝結束後，ｕｎｃｈｅｃｋRun MSYS2 64bit now，結束下載流程。</span></span></span></li>
+<li><span>ＭＳＹＳ２下載：<a href="https://www.msys2.org/">https://www.msys2.org/</a><span><span> 　下載msys2-x86_64-20190524.exe 並執行　，點選Ｂｒｏｗｓｅ，選擇２０１９０６＿ｆａｌｌ／ｄａｔａ後，就可開始安裝，安裝結束後，ｕｎｃｈｅｃｋRun MSYS2 64bit now，結束下載流程。</span></span></span></li>
+<li><span><span><span>protablegit下載:<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 下載 64-bit Git for WindowsPortable安裝在data目錄下</span></span></span></li>
+<li><span><span><span>pip下載:到<a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a><span>頁面，滑鼠右鍵另存新檔到CD2020/data執行，到cmd 輸入python get-pip.py開始下載，下載完成後輸入pip，測試pip是否正常運行。</span></span></span></span></li>
+<li><span><span><span><span>下載可在python使用的模組flask,bs4,xml,elican, mrkdown,flask_cors,leo，指令為pip install flask bs4 lxml pelican markdown flask_cors leo</span></span></span></span></li>
+<li><span><span><span><span>git clone 整個倉儲到 data 目錄下並命名目錄為 tmp</span></span></span></span></li>
+<li><span><span><span><span>putty下載:下載<a href="https://github.com/s40723150/cd2020/raw/master/downloads/putty.7z">putty</a><span>放到data裡面，把之前的ssh和.gitconfig放到home裡面測試是否可以成功用ssh推送資料。</span></span></span></span></span></li>
 </ol><h1>亂數分組:</h1>
 <h4>亂數分組:</h4>
 <p><a href="https://mde.tw/wcm2020/downloads/2020spring_wcm_1a_list.txt">https://mde.tw/wcm2020/downloads/2020spring_wcm_1a_list.txt</a> was taken from <a href="https://osa.nfu.edu.tw/">https://osa.nfu.edu.tw/</a> on Feb. 19, 2020.</p>
