@@ -1,3 +1,15 @@
+# coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+ 
+app = Flask(__name__)
+ 
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+ 
+@app.route("/")
 import random
 import requests
  
@@ -98,5 +110,7 @@ for i in range(len(group)):
         output += str(group[i][j]) + "\n"
        
     gth = gth + 1
-     
-print(output)
+    
+    print(output)
+    if __name__ == "__main__":
+    app.run()
