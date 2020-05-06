@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='亂數分組.html'>亂數分組</a><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a></li>
+                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='assignment 1.html'>assignment 1</a><li><a href='assignment 2.html'>assignment 2</a></li></ul><li class='has-children'><a href='tool.html'>tool</a><ul class='dropdown'><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,35 +154,8 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">project << <a href='project.html'>Previous</a> <a href='每周直播內容.html'>Next</a> >> 每周直播內容<br /><h1>亂數分組</h1>
-<p>import random</p>
-<p>import requests</p>
-<p># getNumList 主要在每組最低人數下, 將不足 10 人的分組平均分配至各組 def getNumList(total, eachGrp=10):</p>
-<p># total is the number of students</p>
-<p># each group at least 10 students #eachGrp = 10; # may divide into "grpNum" number of group grpNum = total // eachGrp;</p>
-<p># check grpNum #print(grpNum)</p>
-<p># vacan list splits = []</p>
-<p># find remainder when total number divid into "grpNum" number of group remainder = total % grpNum</p>
-<p># number of people in one group by calculation calGrp = total // grpNum for i in range(grpNum): splits.append(calGrp)</p>
-<p># check first splits</p>
-<p>#print(splits) for i in range(remainder): splits[i] += 1</p>
-<p># check final splits #print(splits); return splits; # 儲存學生名單資料的 url target_url = "http://mde.tw/cd2020/downloads/2020spring_cd_2a_list.txt"</p>
-<p># 利用 requests 讀取 url 中的資料 f = requests.get(target_url)</p>
-<p># get student list from target_url # 利用 splitlines() 將資料放入數列 studList studList = f.text.splitlines() # 每組預計分組的最低人數 num_in_one_group = 10</p>
-<p># 每組學員暫存數列 gpList = []</p>
-<p># 全班分組數列 group = []</p>
-<p># 各組人數數列 numList = []</p>
-<p># get numList numList = getNumList(len(studList), num_in_one_group)</p>
-<p># check numList # 列出已經補齊的各組人數數列 print("預計各組人數數列:" + str(numList)) output = "" gth = 1 inc = 0</p>
-<p># 弄亂 studList random.shuffle(studList) output += "以下為尚未排序前的各組學員學號: \n" for i in numList: # 列印區隔符號 output += '=' * 20 + "\n"; output += "group " + str(gth) + " 有 " + str(i) + " 人: \n"</p>
-<p># 每組學員暫存數列, 在此 reset gpList = [] for j in range(i): output += studList[j+inc] + "\n"</p>
-<p># 在各分組數列中加入將對應的學員學號 gpList.append(studList[j+inc]) gth = gth + 1 inc = inc + j # 將各組學員數列依照學號排序 gpList.sort() group.append(gpList)</p>
-<p># 列出尚未排序前的分組結果 print(output)</p>
-<p># 列出已經完成排序的分組數列 print("已經排序後的分組數列:" + str(group)) output = ""</p>
-<p># 列出已經排序後的分組名單 output += '=' * 25 + "\n" output += '以下為排序後的各組成員名單:\n' gth = 1</p>
-<p># 先列出純文字以 \n 跳行組員資料 for i in range(len(group)):</p>
-<p># 列印區隔符號 output += '=' * 20 + "\n" output += "group" + str(gth) + "\n" gpList = [] for j in range(len(group[i])): output += str(group[i][j]) + "\n" gth = gth + 1 print(output)</p>
-<br />project << <a href='project.html'>Previous</a> <a href='每周直播內容.html'>Next</a> >> 每周直播內容</div>
+    <div id="tipue_search_content">assignment 2 << <a href='assignment 2.html'>Previous</a> <a href='每周直播內容.html'>Next</a> >> 每周直播內容<br /><h1>tool</h1>
+<br />assignment 2 << <a href='assignment 2.html'>Previous</a> <a href='每周直播內容.html'>Next</a> >> 每周直播內容</div>
         
     <!-- footer -->
       <div class="container">
