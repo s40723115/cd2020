@@ -154,8 +154,73 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">webots << <a href='webots.html'>Previous</a> <a href='COVID-19.html'>Next</a> >> COVID-19<br /><h1>coopliasim</h1>
-<br />webots << <a href='webots.html'>Previous</a> <a href='COVID-19.html'>Next</a> >> COVID-19</div>
+    <div id="tipue_search_content">COVID-19 << <a href='COVID-19.html'>Previous</a> <br /><h1>VirtualBox</h1>
+<h4>Setting VirtualBox Network</h4>
+<p>在VirtualBox→Files→Preferences<span>→Network<br/>新增一個網路設定，支援DHCP和IPV6</span></p>
+<p>再到cd2020pj1的虛擬主機設定NAT的Port號</p>
+<p>IPv4設定：Guest IP是透過ifconfig查出來(IPv6的也是)</p>
+<p><span>IPv6設定</span></p>
+<p><span>Ubuntu 20.04的網路設定</span></p>
+<p><span>P.S.  Guest IP 的部分可以在虛擬主機開機的狀態下進行修改設定</span></p>
+<p><span>IP 查詢</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p>若跳出尚未安裝net-tools的話請安裝</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p>若在<strong>IPv6</strong>環境下有跳出網路錯誤</p>
+<ol>
+<li>IPv6環境設定是否正確<br/><br/><span>請到 /etc/netplan 目錄下檢查 00-install-config.yaml 檔案內的設定</span><span></span><span><span><br/></span></span>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/netplan
+sudo vi 00-install-config.yaml</pre>
+<span>00-install-config.yaml</span>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># This is the network config written by 'subiquity'
+network:
+	ethernets:
+		enpes3:
+			dhcp4: true
+			dhcp6: true
+			nameservers:
+				addresses:
+					- 2001:b000:168::1
+	version: 2</pre>
+<p>編輯完成後:wq跳出編輯並儲存，並更新netplan設定</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo netplan apply</pre>
+<p></p>
+</li>
+</ol>
+<ul>
+<li>proxy問題<br/>請到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案，若沒有，請用新增(直接用vi編輯器開啟proxy.conf就會自動新增)<br/>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d
+sudo vi proxy.conf</pre>
+<p>proxy.conf的檔案內容</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">Acquire::http::proxy "http://[2001:288:6004:17::填port號]";</pre>
+<br/>先增完內容後要更新apt<br/>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+</li>
+</ul>
+<p>網路設定完成後可以啟動wsgi.py</p>
+<p>再用電腦上的網頁(不是虛擬主機的網頁)到 <a href="https://localhost:8443/看是否成功連上，如果成功連上後就換putty">https://localhost:8443/看是否成功連上，如果成功連上後就換putty</a></p>
+<h4>Putty設定</h4>
+<p>IPv4</p>
+<p>Host Name：localhost<br/>Port：22<br/>Connection type：SSH</p>
+<p>IPv6</p>
+<p><strong></strong><span>Host Name：::1</span><br/><span>Port：22</span><br/><span>Connection type：SSH</span></p>
+<p>X11(IPv4或IPv6設定都一樣)</p>
+<p>▣Enable X11 forwarding</p>
+<p>X display location：localhost:0.0</p>
+<h4>Xming</h4>
+<p>安裝<a href="https://sourceforge.net/projects/xming/files/latest/download">Xming</a></p>
+<p>直接安裝後搬移至可攜</p>
+<p>或是直接安裝在隨身碟成可攜</p>
+<p>安裝完成後執行XLaunch.exe，全部為預設設定。</p>
+<p>在putty執行xtrem看是否會成功跳出</p>
+<h4>File Manager</h4>
+<p>執行nautilus若無法執行，請安裝nautilus</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install nautilus</pre>
+<p>安裝完成後再執行一次<span>nautilus，正常的話就會跳出FileManager</span></p>
+<h4><span>CoppeliaSim</span></h4>
+<p><span>到coppeilasim的目錄下開啟coppeilaSim.sh的檔案</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">./coppeilaSim.sh</pre>
+<p>之後就會開啟CoppeilaSim了</p><br />COVID-19 << <a href='COVID-19.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
