@@ -1,0 +1,261 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CD2020-40723115</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CD2020-40723115</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='assignment 1.html'>assignment 1</a><li><a href='assignment 2.html'>assignment 2</a></li></ul><li class='has-children'><a href='tool.html'>tool</a><ul class='dropdown'><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a><li><a href='VirtualBox.html'>VirtualBox</a><li class='has-children'><a href='Linux.html'>Linux</a><ul class='dropdown'><li><a href='磁碟與硬體管理.html'>磁碟與硬體管理</a><li><a href='系統管理員.html'>系統管理員</a><li><a href='壓縮指令.html'>壓縮指令</a><li><a href='一些網路功能.html'>一些網路功能</a><li><a href='其他有的沒的.html'>其他有的沒的</a><li><a href='ftp 指令.html'>ftp 指令</a><li><a href='相關程式設定指令.html'>相關程式設定指令</a><li><a href='X-Window 內的設定指令.html'>X-Window 內的設定指令</a><li><a href='本章問題討論：.html'>本章問題討論：</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">X-Window 內的設定指令 << <a href='X-Window 內的設定指令.html'>Previous</a> <br /><h1>本章問題討論：</h1>
+<blockquote>
+<ol>
+<ol>
+<li><span size="+2" style="font-size: small;">Q</span>：在 Linux 上面都是一些線上的英文說明，有沒有中文說明，或更詳細的說明資料呢？</li>
+</ol>
+</ol>
+<br/><span color="#000066" style="color: #000066;"><span size="+2" style="font-size: small;">A</span>：</span><br/><span color="#000066" style="color: #000066;">其實在網路上已經有一票高手在進行 Linux how to 的翻譯工作，這是一個很有意義的事情，因為可以讓新手或者是一些有需要使用 Linux 的人，有一個很好的學習文件。你可以來下面的網址看看：</span><br/><span color="#000066" style="color: #000066;">中文How-to：<a href="http://www.linux.org.tw/CLDP/" target="_blank">http://www.linux.org.tw/CLDP/</a></span><br/><span color="#000066" style="color: #000066;">英文How-to：<a href="http://www.ibiblio.org/mdw/HOWTO/HOWTO-INDEX/howtos.html" target="_blank">http://www.ibiblio.org/mdw/HOWTO/HOWTO-INDEX/howtos.html</a></span><br/>
+<ol>
+<ol> 
+<li><a name="newHardDisk"></a><span size="+2" style="font-size: small;">Q</span>：在 Linux 中如何加入新硬碟？</li>
+</ol>
+</ol>
+<br/><span color="#000066" style="color: #000066;"><span size="+2" style="font-size: small;">A</span>：</span><br/><span color="#000066" style="color: #000066;">其實加入新硬碟的方法也是很簡單的：</span>
+<ol>
+<ol>
+<ul>
+<li><span color="#3333FF" style="color: #3333ff;">安裝硬碟</span><span color="#000066" style="color: #000066;">：關掉 Linux 主機電源，調整 Hard Disk 的 Jump （master 或 slave），串接在 IDE 的介面，請注意，留意你增加的硬碟所串接的 IDE 介面為哪一個插槽，例如你插在 IDE2 的 Master ，則你的硬碟應為 hdc；</span></li>
+<li><span color="#3333FF" style="color: #3333ff;">新增硬體於BIOS</span><span color="#000066" style="color: #000066;">：開啟電腦後，按 del 鍵進入 BIOS，選擇 IDE Hard Disk Detector 字樣的選項，讓BIOS去捉硬碟，然後再選擇 Save and Exit；</span></li>
+<li><span color="#3333FF" style="color: #3333ff;">Linux 安裝</span><span color="#000066" style="color: #000066;">：開機進入 Linux 的時候，系統會告訴你有捉到一個新的硬體，你可以按 『configure』 由系統直接安裝即可；</span></li>
+<li><span color="#3333FF" style="color: #3333ff;">格式化硬碟</span><span color="#000066" style="color: #000066;">：以 root 的身份進入 Linux 後，執行以下兩個程式：</span></li>
+<ul>
+<li><span color="#000066" style="color: #000066;"><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#fdisk">fdisk</a>  /dev/hdc  &lt;== hdc 與你的硬碟串接的IDE介面有關，關於這個指令的介紹請參考上面的指令說明；</span></li>
+<li><span color="#000066" style="color: #000066;"><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#mke2fs">mke2fs</a>  -c  /dev/hdc1  &lt;==假設硬碟全部配置成一個大硬碟，則硬碟應為 hdc1 ，以 mke2fs 將系統規劃為 Linux 的系統檔。</span></li>
+</ul>
+<li><span color="#3333FF" style="color: #3333ff;">開機自動載入</span><span color="#000066" style="color: #000066;">：再來則是以 vi 修改 /etc/fstab 檔案，讓每次開機把這個硬碟直接掛入系統中。例如 hdc1 這顆硬碟掛在 /mnt/hdc1 中，則 fstab 的檔案有點像這樣：（</span><span color="#000000" style="color: #000000;">/dev/hdc1 那一行是新加入的</span><span color="#000066" style="color: #000066;">！）</span></li>
+</ul>
+</ol>
+</ol>
+<br/>
+<ol>
+<ol>
+<ul> </ul>
+</ol>
+</ol>
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">/dev/hda1               /                       ext2    defaults        1 1</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">/dev/hda5               swap                    swap    defaults        0 0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFF00" style="color: #ffff00;"><span size="-1">/dev/hdc1               /mnt/hdc1               ext2    defaults        1 1</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<ol>
+<ul>
+<li><span color="#000099" style="color: #000099;">安裝完成</span><span color="#000066" style="color: #000066;">：然後再重新開機就可以啦！</span></li>
+</ul>
+<li><a name="newuser"></a><span size="+2" style="font-size: small;">Q</span>：在 Linux 中如何增加新使用者呢？</li>
+</ol>
+</ol>
+<br/><span color="#000066" style="color: #000066;"><span size="+2" style="font-size: small;">A</span>：</span><br/><span color="#000066" style="color: #000066;">無論是加入新使用者或者是加入新群組，都可以使用<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06userconf.php" target="_blank">/bin/userconf</a><span> </span>這個程式來完成，使用這個程式，只要輸入 ID 及 pass word 就可以啦！（不過你必須是 root 的身份才可以執行！）詳細的執行請看上面的指令說明。</span><br/>
+<ol>
+<ol> 
+<li><a name="openfloppy"></a><span size="+2" style="font-size: small;">Q</span>：在 Linux 中如何製作開機片？</li>
+</ol>
+</ol>
+<br/><span color="#000066" style="color: #000066;"><span size="+2" style="font-size: small;">A</span>：</span><br/><span color="#000066" style="color: #000066;">無論何種系統，有個開機片總是比較安心的！ Linux 也是一樣！雖然他很穩定，但是並不是說就不會有問題，因此製作可開機磁片以利解救 Linux 問題是一個好習慣！製作開機片的方法很簡單，只要下達：</span>
+<ol>
+<ul>
+<li><span color="#000066" style="color: #000066;"><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#mkbootdisk">mkbootdisk</a><span> </span>--device /dev/fd0 `uname -r`</span></li>
+</ul>
+</ol>
+</blockquote><br />X-Window 內的設定指令 << <a href='X-Window 內的設定指令.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

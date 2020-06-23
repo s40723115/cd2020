@@ -1,0 +1,303 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CD2020-40723115</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CD2020-40723115</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='assignment 1.html'>assignment 1</a><li><a href='assignment 2.html'>assignment 2</a></li></ul><li class='has-children'><a href='tool.html'>tool</a><ul class='dropdown'><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a><li><a href='VirtualBox.html'>VirtualBox</a><li class='has-children'><a href='Linux.html'>Linux</a><ul class='dropdown'><li><a href='磁碟與硬體管理.html'>磁碟與硬體管理</a><li><a href='系統管理員.html'>系統管理員</a><li><a href='壓縮指令.html'>壓縮指令</a><li><a href='一些網路功能.html'>一些網路功能</a><li><a href='其他有的沒的.html'>其他有的沒的</a><li><a href='ftp 指令.html'>ftp 指令</a><li><a href='相關程式設定指令.html'>相關程式設定指令</a><li><a href='X-Window 內的設定指令.html'>X-Window 內的設定指令</a><li><a href='本章問題討論：.html'>本章問題討論：</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">壓縮指令 << <a href='壓縮指令.html'>Previous</a> <a href='其他有的沒的.html'>Next</a> >> 其他有的沒的<br /><h1>一些網路功能</h1>
+<blockquote><a name="ifconfig"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">ifconfig</span></span></span>
+<blockquote>這是用來查詢目前我們這個系統的網路卡的狀況的指令，可以查詢 IP、子遮罩網路及網路卡的硬體資訊等等。例如：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# ifconfig</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">eth0      Link encap:Ethernet  HWaddr 00:50:FC:20:F1:4D</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          inet addr:192.168.1.2  Bcast:192.168.1.255  Mask:255.255.255.0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          RX packets:7651977 errors:0 dropped:0 overruns:0 frame:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          TX packets:7467862 errors:0 dropped:0 overruns:0 carrier:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          collisions:961 txqueuelen:100</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          Interrupt:10 Base address:0x6100</span></span></span>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">eth1      Link encap:Ethernet  HWaddr 00:80:C8:5A:87:01</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          RX packets:7492497 errors:0 dropped:0 overruns:0 frame:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          TX packets:7617653 errors:0 dropped:0 overruns:0 carrier:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          collisions:289 txqueuelen:100</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          Interrupt:9 Base address:0x6200</span></span></span></p>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">lo        Link encap:Local Loopback</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          inet addr:127.0.0.1  Mask:255.0.0.0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          UP LOOPBACK RUNNING  MTU:3924  Metric:1</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          RX packets:512 errors:0 dropped:0 overruns:0 frame:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          TX packets:512 errors:0 dropped:0 overruns:0 carrier:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          collisions:0 txqueuelen:0</span></span></span></p>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">ppp0      Link encap:Point-to-Point Protocol</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          inet addr:211.74.249.38  P-t-P:172.16.11.8  Mask:255.255.255.255</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1492  Metric:1</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          RX packets:7469726 errors:0 dropped:0 overruns:0 frame:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          TX packets:7617651 errors:0 dropped:0 overruns:0 carrier:0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">          collisions:0 txqueuelen:10</span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+由於上面的例子是使用兩張網路卡，因此會有 eth0 及 eth1 兩個介面，至於 lo 是系統內設的遞迴網路，這是一定會有的咚咚，而且其 inet addr（IP）一定是 127.0.0.1！另外， ppp0 則是 ADSL 撥接之後所產生的虛擬介面（對外的介面！）。在這個例子中，鳥哥使用了兩張網路卡， eth0 用在內部網路， eth1 用在 ADSL 撥接，所以 eth1 就沒有 address。至於第一張網路卡的網路位址是虛擬的 192.168.1.2。而真正的對外聯繫是 ppp0 這一個撥接介面，其 internet 是 211.74.249.38！</blockquote>
+<a name="route"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">route</span></span></span>
+<blockquote>這是用來看你的網路通訊包傳送的路由情況的指令。由於通信包是藉由一個一個的路由表來傳遞的，所以觀察你的路由表，對於網路除錯（debuge）就很重要啦！<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# route</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Kernel IP routing table</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Destination     Gateway         Genmask         Flags Metric Ref    Use Iface</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">192.168.1.2     *               255.255.255.255 UH    0      0        0 eth0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">172.16.11.8     *               255.255.255.255 UH    0      0        0 ppp0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">192.168.1.0     *               255.255.255.0   U     0      0        0 eth0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">127.0.0.0       *               255.0.0.0       U     0      0        0 lo</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">default         172.16.11.8     0.0.0.0         UG    0      0        0 ppp0</span></span></span></td>
+</tr>
+</tbody>
+</table>
+例如上表中，所有的通訊都是藉由 ppp0 這一個介面卡（Iface）並且其通訊閘（Gateway）為 172.16.11.8 這一個！另外，在虛擬 IP （內部網路）則是藉由 eth0 （192.168.1.2）這一塊網卡來連線的！
+<p>另外，你也可以使用 route 來加入你的路由表，假如你要將一個網路為 192.56.76.XXX 且子網路為 255.255.255.0 的位置加入你的 eth0 這個網路卡的連線處理中，就可以使用如下的語法：<br/> </p>
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# route add -net 192.56.76.0 netmask 255.255.255.0 dev eth0</span></span></span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<a name="netstate"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">netstat</span></span></span>
+<blockquote>這也是用來觀察網路狀況的指令。<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# netstat</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Active Internet connections (w/o servers)</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Proto Recv-Q Send-Q Local Address           Foreign Address         State</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFF00" style="color: #ffff00;"><span size="-1">tcp        0    126 swks249-38.adsl.:telnet 192.168.1.15:1341     ESTABLISHED</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Active UNIX domain sockets (w/o servers)</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Proto RefCnt Flags       Type       State         I-Node Path</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">unix  2      [ ]         DGRAM                    87643  /dev/log</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">unix  0      [ ]         STREAM     CONNECTED     116    @00000012</span></span></span></td>
+</tr>
+</tbody>
+</table>
+在上表黃色的部分，由於鳥哥是在另一部電腦連線進入的，所以網路位址就會不同囉！</blockquote>
+<a name="hostname"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">hostname</span></span></span>
+<blockquote>這只是用來觀看你的主機名稱而已。<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# hostname</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">tsai.adsldns.org</span></span></span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<a name="ping"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">ping</span></span></span>
+<blockquote>這是用來察看對方網路是否有動作的指令，這個指令亦可以在 windows 上面執行！<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# ping www.kimo.com.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">PING www.kimo.com.tw (202.1.237.21) from 211.74.249.38 : 56(84) bytes of data.</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">64 bytes from 202.1.237.21: icmp_seq=0 ttl=245 time=56.7 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">64 bytes from 202.1.237.21: icmp_seq=1 ttl=245 time=58.0 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">64 bytes from 202.1.237.21: icmp_seq=2 ttl=245 time=58.7 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">64 bytes from 202.1.237.21: icmp_seq=3 ttl=245 time=52.0 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">64 bytes from 202.1.237.21: icmp_seq=4 ttl=245 time=72.2 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">--- www.kimo.com.tw ping statistics ---</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">5 packets transmitted, 5 packets received, 0% packet loss</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">round-trip min/avg/max = 52.0/59.5/72.2 ms</span></span></span></td>
+</tr>
+</tbody>
+</table>
+例如上表中，我們去觀察 www.kimo.com.tw 是否有啟動，看每一列的最後一行，會告訴你訊息回應的時間大約是 56ms！（10<sup>-3</sup><span> </span>sec.）</blockquote>
+<a name="nslookup"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">nslookup</span></span></span>
+<blockquote>這是用來查詢或反查詢 DNS 的指令！例如我們要知道 奇摩 的網路位址，則可以如此查詢：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# nslookup www.kimo.com.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Server:  ksdns.seed.net.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Address:  139.175.10.20</span></span></span>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Non-authoritative answer:</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Name:    www.kimo.com.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Address:  202.1.237.21</span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+系統會告訴你，我們使用的 DNS server 是 ksdns.seed.net.tw，而查詢到的網址是 202.1.237.21。如果需要更詳細的查詢，可以用下面的方式來查！<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# nslookup</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Default Server:  ksdns.seed.net.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Address:  139.175.10.20</span></span></span>
+<p><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">&gt; set type=any          </span><span color="#FFFF00" style="color: #ffff00;">  &lt;==告訴系統我們要詳細的資料！</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">&gt; www.kimo.com.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Server:  ksdns.seed.net.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Address:  139.175.10.20</span></span></span></p>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Non-authoritative answer:</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">www.kimo.com.tw internet address = 202.1.237.21</span></span></span></p>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Authoritative answers can be found from:</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">kimo.com.tw     nameserver = ns1.kimo.com.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">kimo.com.tw     nameserver = ns1.yahoo.com</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">kimo.com.tw     nameserver = ns3.europe.yahoo.com</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">kimo.com.tw     nameserver = ns5.dcx.yahoo.com</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">ns1.kimo.com.tw internet address = 210.59.144.1</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">ns1.yahoo.com   internet address = 204.71.200.33</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">ns3.europe.yahoo.com    internet address = 217.12.4.71</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">ns5.dcx.yahoo.com       internet address = 216.32.74.10</span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<a name="talk"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">talk</span></span></span>
+<blockquote>這是用來交談的指令。</blockquote>
+<a name="traceroute"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">traceroute</span></span></span>
+<blockquote>這是用來追查通訊包傳送的情況，例如我們要從 seednet 的網路上查詢到成大的代理伺服器的通訊狀況，可以使用如下的指令：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# /usr/sbin/traceroute proxy.ncku.edu.tw</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">traceroute to proxy.ncku.edu.tw (163.28.112.100), 30 hops max, 38 byte packets</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 1  172.16.11.8 (172.16.11.8)  128.378 ms  68.920 ms  118.313 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 2  139.175.15.1 (139.175.15.1)  54.146 ms  38.557 ms  44.320 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 3  R58-37.seed.net.tw (139.175.58.37)  61.339 ms  43.177 ms  39.548 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 4  R56-162.seed.net.tw (139.175.56.162)  66.631 ms  43.182 ms  41.429 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 5  203.72.191.222 (203.72.191.222)  65.538 ms  61.379 ms  38.887 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 6  140.116.241.230 (140.116.241.230)  40.159 ms  46.107 ms  46.854 ms</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 7  proxy.tnrc.edu.tw (163.28.112.100)  38.641 ms  57.286 ms  46.380 ms</span></span></span></td>
+</tr>
+</tbody>
+</table>
+系統會告訴你，總共通過了7個路由，並列出了每一個路由的 Internet 位址。這個東西有個好處，可以告訴你，當網路出問題時，問題是在哪一個地方！</blockquote>
+<a name="mail"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">mail</span></span></span>
+<blockquote>這是用來收發信件的指令，詳細的流程我們會在 mail 架站中提及。</blockquote>
+</blockquote>
+<p><a name="others"></a></p>
+<br />壓縮指令 << <a href='壓縮指令.html'>Previous</a> <a href='其他有的沒的.html'>Next</a> >> 其他有的沒的</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

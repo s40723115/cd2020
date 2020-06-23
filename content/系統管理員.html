@@ -1,0 +1,279 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CD2020-40723115</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CD2020-40723115</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='assignment 1.html'>assignment 1</a><li><a href='assignment 2.html'>assignment 2</a></li></ul><li class='has-children'><a href='tool.html'>tool</a><ul class='dropdown'><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a><li><a href='VirtualBox.html'>VirtualBox</a><li class='has-children'><a href='Linux.html'>Linux</a><ul class='dropdown'><li><a href='磁碟與硬體管理.html'>磁碟與硬體管理</a><li><a href='系統管理員.html'>系統管理員</a><li><a href='壓縮指令.html'>壓縮指令</a><li><a href='一些網路功能.html'>一些網路功能</a><li><a href='其他有的沒的.html'>其他有的沒的</a><li><a href='ftp 指令.html'>ftp 指令</a><li><a href='相關程式設定指令.html'>相關程式設定指令</a><li><a href='X-Window 內的設定指令.html'>X-Window 內的設定指令</a><li><a href='本章問題討論：.html'>本章問題討論：</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">磁碟與硬體管理 << <a href='磁碟與硬體管理.html'>Previous</a> <a href='壓縮指令.html'>Next</a> >> 壓縮指令<br /><h1>系統管理員</h1>
+<blockquote><a name="su"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">su</span></span></span>
+<blockquote>這是一個用來轉換你身份成為 super user （系統管理員）的指令，任何人只要知道 root 的密碼，就可以成為 super user，所以密碼可千萬不要外流呀！由於 RedHat 在主機之外的終端機上，無法以 root 的身份直接連線，所以你需要以一般身份的 user 連線之後，再以 su 指令來成為 super user：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[vbird@tsai vbird]# su <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==輸入指令</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">Password:      <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==在這裡輸入 root 的密碼</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai vibrd]#     <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==看，使用者名稱變囉！</span></span></span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<a name="clear"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">clear</span></span></span>
+<blockquote>這是用來清除螢幕畫面用的，沒有什麼太大的用處。通常是你覺得畫面太亂的時候輸入用的！直接輸入 clear 就可以了！</blockquote>
+<a name="dmesg"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">dmesg</span></span></span>
+<blockquote>在開機的時候你會發現有很多的訊息出現吧，例如 CPU 的形式、硬碟、光碟型號及硬碟分割表等等。但是訊息都是『刷』的一聲就跑過去了！這些訊息有時候對於系統管理員是很重要的，因為他提供了系統的資訊呀！要看這些訊息你可以用 dmesg 這個指令來觀看！<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# dmesg|more</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<span color="#000000" style="color: #000000;">加上 |more 的原因是因為訊息太多了，所以可以加入這個管線指令來使畫面暫停！</span></blockquote>
+<a name="groupadd"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">groupadd</span></span></span>
+<blockquote>這是用來增加群組的指令，通常鳥哥都不用這個指令的，因為有更容易使用的指令<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#userconf">/bin/userconf</a><span> </span>可以使用哩（注意，在 RedHat 7.0 以後的版本，就要使用 /sbin/userconf 哩）！</blockquote>
+<a name="useradd"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">useradd</span></span></span>
+<blockquote>這是用來增加使用者的指令，鳥哥通常不使用這個指令，你可以使用<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#userconf">/bin/userconf</a><span> </span>這個指令，更簡單易用喔（是視窗介面的喔！）（注意，在 RedHat 7.0 以後的版本，就要使用 /sbin/userconf 哩）</blockquote>
+<a name="userconf"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">userconf</span></span></span>
+<blockquote>這是用來增加使用者、群組等，且以視窗為介面的一個指令！如果你是以遠端登入，並使用 su 指令成為 super user 的話，直接輸入 userconf 可能會找不到這個指令，你可以輸入：<span> </span><span color="#3333FF" style="color: #3333ff;">/bin/userconf</span><span> </span>來啟動這個指令！（注意，在 RedHat 7.0 以後的版本，就要使用<span> </span><span color="#3333FF" style="color: #3333ff;">/sbin/userconf</span><span> </span>哩），由於這個指令的圖示較多，請到<a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06userconf.php" target="_blank">這裡</a>來看看！</blockquote>
+<a name="passwd"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">passwd</span></span></span>
+<blockquote>這是用來更改密碼的指令，很簡單，只要在提示字元下輸入<span> </span><span color="#000066" style="color: #000066;">passwd</span><span> </span>，然後輸入目前的密碼，再輸入兩次欲修改成的新密碼，就修改OK了！不過要注意，密碼的形式：<span color="#000099" style="color: #000099;">不能與帳號相同，且需要 8 個字元以上，另外，帳號也不能太簡單！否則系統會不接受！</span><br/> 
+<table bgcolor="#333333" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[vbird@tsai vbird]# passwd</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Changing password for vbird</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">(current) UNIX password:     <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==這裡輸入目前的密碼</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">New UNIX password:    <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==這裡輸入新的密碼</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">Retype new UNIX password:    <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==這裡再輸入新的密碼一次</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">passwd: all authentication tokens updated successfully</span></span></span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<a name="who"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">who</span></span></span>
+<blockquote>這是用來視察目前在系統上的使用者指令，你也可以使用 w 這個指令來下達動作。<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# who</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">root     pts/0    Aug  2 20:43</span></span></span>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# w</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">  8:48pm  up 4 days,  5:08,  1 user,  load average: 0.00, 0.00, 0.00</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU  WHAT</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">root     pts/0    192.168.1.2       8:43pm  0.00s  0.38s   ?     -</span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+基本上，who 與 w 的功能是相同的，只是 who 僅列出使用者名稱與登入時間，至於 w 則會列出使用者的
+<ul>
+<li>來源位址（IP）：就是 FROM 那一項即是IP；</li>
+<li>登入時間：即是 LOGIN@ 那一項；</li>
+<li>工作項目：就是 WHAT 那一項！</li>
+</ul>
+</blockquote>
+<a name="whoami"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">whoami</span></span></span>
+<blockquote>這是用來確認你目前的身份的指令，由於你可能會有幾個身份在你的機器上，所以需要以這個指令來確認你的身份，不過由於 Linux 會將使用者名稱寫在提示字元上，所以這個指令目前比較少用到了。</blockquote>
+<a name="top"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">top</span></span></span>
+<blockquote>這是用來指示目前系統的服務項目的動態資料。<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# top</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFCC00" style="color: #ffcc00;"><span size="-1"> 10:14pm  up 4 days,  6:34,  1 user,  load average: 0.01, 0.01, 0.00</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFCC00" style="color: #ffcc00;"><span size="-1">40 processes: 39 sleeping, 1 running, 0 zombie, 0 stopped</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFCC00" style="color: #ffcc00;"><span size="-1">CPU states:  0.5% user,  0.3% system,  0.0% nice, 99.0% idle</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFCC00" style="color: #ffcc00;"><span size="-1">Mem:   63124K av,  60844K used,   2280K free,  23604K shrd,  35648K buff</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFCC00" style="color: #ffcc00;"><span size="-1">Swap: 104380K av,   1684K used, 102696K free                 10788K cached</span></span></span>
+<p><span face="細明體" style="font-family: 細明體;"><span color="#FFFFCC" style="color: #ffffcc;"><span size="-1">  PID USER     PRI  NI  SIZE  RSS SHARE STAT  LIB %CPU %MEM   TIME COMMAND</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1"> 3121 root      20   0  1016 1016   820 R       0  0.9  1.6   0:47 top</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">    1 root       0   0   380  368   320 S       0  0.0  0.5   0:04 init</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">    2 root       0   0     0    0     0 SW      0  0.0  0.0   0:00 kflushd</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">    3 root       0   0     0    0     0 SW      0  0.0  0.0   0:00 kupdate</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">    4 root       0   0     0    0     0 SW      0  0.0  0.0   0:00 kpiod</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">    5 root       0   0     0    0     0 SW      0  0.0  0.0   0:00 kswapd</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">    6 root     -20 -20     0    0     0 SW&lt;     0  0.0  0.0   0:00 mdrecoveryd</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">  366 bin        0   0   308  288   228 S       0  0.0  0.4   0:00 portmap</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">  382 root       0   0   392  376   328 S       0  0.0  0.5   0:00 apmd</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">  435 root       0   0   488  480   388 S       0  0.0  0.7   0:00 syslogd</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">  446 root       0   0   688  676   316 S       0  0.0  1.0   0:00 klogd</span></span></span></p>
+</td></tr></tbody></table></blockquote></blockquote>
+<p>輸入 top 之後，會出現類似上面的顯示情況。上圖中說明了你的記憶體有63124K，而下方的面版說明了目前正在執行中的工作內容！ <a name="free"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">free</span></span></span></p>
+<blockquote>這是用來察看記憶體的指令。<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# free</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">             total       used       free     shared    buffers     cached</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Mem:         63124      60732       2392      23136      35648      10796</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">-/+ buffers/cache:      14288      48836</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">Swap:       104380       1684     102696</span></span></span></td>
+</tr>
+</tbody>
+</table>
+如上圖中，說明總記憶體容量為 63124K，而使用了 60732K，另外，虛擬記憶體（Swap）共有 104380K（亦即共有 100MB 的虛擬記憶體）。</blockquote>
+<p><a name="quotacheck"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">quotacheck, edquota</span></span></span></p>
+<blockquote>這些檔案是用來限制使用者在 Linux 主機上的硬碟使用容量。例如，有十個人同時分享一個 2G 的硬碟空間，但是有一個使用者就用了 1.5 GB 的容量，那相對的，其他人可使用的空間就只有剩下 0.5G 啦！不公平對不對，而且也怕被使用者填充大量的垃圾，而使用系統資源被瓜分掉！因此就有 Quota 這個咚咚的出現啦！由於執行的步驟較為繁瑣，所以額外寫了一個頁面，請到<a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06quota.php" target="_blank">這裡</a>來看看。</blockquote>
+<p><a name="tar_compre"></a></p>
+<br />磁碟與硬體管理 << <a href='磁碟與硬體管理.html'>Previous</a> <a href='壓縮指令.html'>Next</a> >> 壓縮指令</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

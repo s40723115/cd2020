@@ -1,0 +1,250 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CD2020-40723115</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CD2020-40723115</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='assignment 1.html'>assignment 1</a><li><a href='assignment 2.html'>assignment 2</a></li></ul><li class='has-children'><a href='tool.html'>tool</a><ul class='dropdown'><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a><li><a href='VirtualBox.html'>VirtualBox</a><li class='has-children'><a href='Linux.html'>Linux</a><ul class='dropdown'><li><a href='磁碟與硬體管理.html'>磁碟與硬體管理</a><li><a href='系統管理員.html'>系統管理員</a><li><a href='壓縮指令.html'>壓縮指令</a><li><a href='一些網路功能.html'>一些網路功能</a><li><a href='其他有的沒的.html'>其他有的沒的</a><li><a href='ftp 指令.html'>ftp 指令</a><li><a href='相關程式設定指令.html'>相關程式設定指令</a><li><a href='X-Window 內的設定指令.html'>X-Window 內的設定指令</a><li><a href='本章問題討論：.html'>本章問題討論：</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">VirtualBox << <a href='VirtualBox.html'>Previous</a> <a href='磁碟與硬體管理.html'>Next</a> >> 磁碟與硬體管理<br /><h1>Linux</h1>
+<p>取自https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php</p>
+<blockquote><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">cd</span></span></span>
+<blockquote>這是用來變換工作路徑的指令。一登入 Linux 系統後，root 會在 /root 下，至於使用者會在預設的 /home/username 底下，例如鳥哥的 ID 為 vbird ，則以 vbird 的身份登入後，會到 /home/vbird 這個路徑下。OK！那回到上一層可以用 cd .. 而到相對路徑可到 cd ../bird，至於絕對路徑則是 cd /usr/sbin ！注意喔，在前面的<span color="#000066" style="color: #000066;">提示字元會改變路徑名稱</span>！</blockquote>
+<blockquote>cd.. ----回到上一層<br/>cd ----回到使用者目錄<br/>cd/usr/bin---到/usr/bin這一個目錄 </blockquote>
+<br/>
+<blockquote>這是顯示目前所在目錄的指令，例如在上個表格最後的目錄是 /usr/bin 這個目錄，但是提示字元僅顯示 bin ，如果你想要知道目前所在的目錄，可以輸入 pwd 即可：<br/> </blockquote>
+<blockquote>pwd------顯示路徑</blockquote>
+<br/>
+<blockquote>這是用來顯示檔案名稱與內容的指令，檔案的內容說明已經在<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_05file.php">這裡</a><span> </span>說明過了，在此不再重複！ ls 的語法為：<br/> </blockquote>
+ls --color -----以彩色顯示檔案資料<br/>ls -l --------- 詳細列出檔案系統結構<br/>ls -a --------- 顯示隱藏檔 （以"."開頭的檔案）<br/>ls -al -------- 同時顯示隱藏檔與詳細資料<br/>ls -allmore --- 將檔案內容以一頁一頁顯示</blockquote>
+<blockquote><br/>
+<blockquote>這是將檔案內容列出的指令。例如在 /root 下有一個檔名為 .bashrc （這是系統預設的檔案，是隱藏檔），你可以按下 cd 回到 /root 目錄後，執行：<br/> 上面顯示的就是 .bashrc 這個檔案的內容啦！基本上，cat 與 DOS 下的 type 是相同的！</blockquote>
+<a name="more"></a>
+<blockquote>是否覺得 cat 在讀取較大的檔案的時候會有看不到的資訊呢（如果檔案太大的話），這時候你可以用 more 來一頁頁讀取喔！另外， more 也可以與其他的程式合併使用，例如 ls ！（如下表中，『｜』就是分隔號，可以將兩個指令放在一起執行！）<br/> </blockquote>
+<br/>
+<blockquote>建立新的目錄！例如我們要建立一個 test 的目錄，你可以這樣下指令：<br/> 再執行了 ls -l 之後，你就可以看到 test 這個目錄啦！</blockquote>
+<br/>
+<blockquote>這是移除的指令，相當於 dos 下的 del 指令！這裡要注意的是，通常在 Linux 系統下，為了怕檔案被誤殺，所以都已經有 -i 這個參數， -i 是指每個檔案被殺掉之前都會確認一次。而如果要連目錄下的東西都一起殺掉的話，就要使用 -rf 這個參數了！你可以用下面這個例子來試試看有什麼不同的現象！<br/> </blockquote>
+<br/>
+<blockquote>mkdir 是建立目錄，而 rmdir 就是移除目錄的指令。不過，若是欲移除的目錄裡頭有檔案或其他目錄存在，就無法移除，這時就要用剛剛的 rm -rf 來移除啦！</blockquote>
+<br/>
+<blockquote>這是移動檔案或目錄的指令，例如我們要將 .bashrc 這個檔案移動至根目錄下，則：<br/> 而將檔案移動至目前的工作目錄，則加上 "." 這個字！
+<p><span face="細明體" style="font-family: 細明體;">語法：<span color="#3333FF" style="color: #3333ff;"><span> </span>mv 來源檔（或目錄） 目的檔（或目錄）</span></span></p>
+</blockquote>
+<br/>
+<blockquote>就是 copy 的意思。例如我們要將 .bashrc 這個檔案複製到 /home 底下，可以：<br/> 
+<p><span face="細明體" style="font-family: 細明體;">語法：<span color="#3333FF" style="color: #3333ff;"><span> </span>cp 來源檔 目的檔</span></span></p>
+</blockquote>
+<br/>
+<blockquote> ln  -s  真實目錄或檔案   連結的目錄或檔案：這是連結檔案或目錄的指令，通常我們都會加 -s 這個參數，例如我們將 /usr/bin 這個目錄連接到 /root 底下，可以這樣輸入：<br/> 不過請注意喔，在你的 /root 底下的 bin 這個目錄中的所有檔案其實都是 /usr/bin 裡面的東西，所以你如果進入 /root/bin 內亂殺東西的話，等於是將 /usr/bin 內的檔案殺掉喔！
+<p><span face="細明體" style="font-family: 細明體;">語法：<span color="#3333FF" style="color: #3333ff;"><span> </span>ln -s 來源檔（或目錄） 目的檔（或目錄）</span></span></p>
+</blockquote>
+<blockquote>尋找檔案的指令，會將欲尋找的檔案找出來，例如下面的例子：<br/> 上面的意思為：<span color="#000066" style="color: #000066;">在 / 目錄（根目錄）下尋找檔名（-name）為 bin 的檔案</span>，要注意的是，因為 Linux 的檔案很多，如果你的電腦比較舊，可能會找很久...
+<p>語法：<span face="細明體" style="font-family: 細明體;"><span color="#3333FF" style="color: #3333ff;"><span> </span>find 路徑 -name 檔名</span></span></p>
+</blockquote>
+<br/>
+<blockquote>相對於 find ，你也可以使用 whereis 這個指令來下達找尋的檔案，whereis 利用曾經找過的系統資訊內的資料去找檔案，所以速度會很快，不過，如果 whereis 找不到的話，並不代表該檔案真的不存在！這個要小心！<br/> </blockquote>
+<br/>
+<blockquote>這是變更檔案屬性的指令，通常鳥哥都是以數字作為改變屬性的依據；在檔案的屬性中， r 為4分、w 為2分， x 為1分，如果你想要讓你剛建立的一個檔案，讓大家都看到的話，即你需要『-rw-r--r--』，這是你的三個群組的分數分別是 r+w=6, r=4, r=4，所以可以下達：<br/> </blockquote>
+<br/>
+<blockquote>記得檔案有『擁有人』及『擁有群組』吧，這個 chown 就是在改變擁有者的指令。例如你 copy 一個檔案給 vbird ，但是因為你的身份是 root ，所以你 copy 過去的檔案 vbird 可能不能使用，因此你需要將檔案的擁有人改成 vbird 才可以！如下：<br/> 那如果想要將整個目錄下的檔案都改變擁有者與擁有群組呢？可以下達<br/><span color="#000066" style="color: #000066;">chown  -R  username:groupname  directory  (ex&gt; chown -R root:root /root)</span><br/>即可喔！</blockquote>
+<br/>
+<blockquote>作用與<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#chown">chown</a><span> </span>相似，只是在改變檔案或目錄的『擁有群組』。</blockquote>
+<br/>
+<blockquote>這是用來察看硬碟空間的指令。由於我們目前將檔案都建立在根目錄『/』下，所以只要沒有空間，則所有檔案都無法複製進來系統。不過，若你規劃出多的硬碟，則可以察看你的硬碟空間資訊，如下所示：<br/> 上面說，Filesystem 是硬碟所在的劃分表， Used 是指使用掉的硬碟空間（KB），Available是剩下空間，Mounted on則是這顆硬碟代表哪一個目錄。如上所示，根目錄(/)在 hda5 這顆硬碟，總空間有 964312 KB，剩下可用空間為 827680KB，至於 /win98 則在 hda1 中，且全部空間有 1022080 KB。
+<p>如果要將資料型態以 MB 數顯示的話，可以輸入 df -m 來達成。</p>
+</blockquote>
+<br/>
+<blockquote>這是用來察看目錄內所有檔案使用掉的空間的情況，如下所示：<br/> 其中， du 預設的檔案輸出資料為 KB，以參數 -m 使檔案資料顯示為 MB。</blockquote>
+</blockquote>
+<p><a name="hardware"></a></p><br />VirtualBox << <a href='VirtualBox.html'>Previous</a> <a href='磁碟與硬體管理.html'>Next</a> >> 磁碟與硬體管理</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

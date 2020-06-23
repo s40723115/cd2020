@@ -1,0 +1,282 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CD2020-40723115</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CD2020-40723115</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='python３８２更新.html'>python３８２更新</a><li class='has-children'><a href='project.html'>project</a><ul class='dropdown'><li><a href='assignment 1.html'>assignment 1</a><li><a href='assignment 2.html'>assignment 2</a></li></ul><li class='has-children'><a href='tool.html'>tool</a><ul class='dropdown'><li><a href='每周直播內容.html'>每周直播內容</a><li><a href='webots.html'>webots</a><li><a href='coopliasim.html'>coopliasim</a><li><a href='COVID-19.html'>COVID-19</a><li><a href='VirtualBox.html'>VirtualBox</a><li class='has-children'><a href='Linux.html'>Linux</a><ul class='dropdown'><li><a href='磁碟與硬體管理.html'>磁碟與硬體管理</a><li><a href='系統管理員.html'>系統管理員</a><li><a href='壓縮指令.html'>壓縮指令</a><li><a href='一些網路功能.html'>一些網路功能</a><li><a href='其他有的沒的.html'>其他有的沒的</a><li><a href='ftp 指令.html'>ftp 指令</a><li><a href='相關程式設定指令.html'>相關程式設定指令</a><li><a href='X-Window 內的設定指令.html'>X-Window 內的設定指令</a><li><a href='本章問題討論：.html'>本章問題討論：</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Linux << <a href='Linux.html'>Previous</a> <a href='系統管理員.html'>Next</a> >> 系統管理員<br /><h1>磁碟與硬體管理</h1>
+<blockquote><a name="mount"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">mount</span></span></span>
+<blockquote>這是將硬碟或者是光碟、軟碟接掛上系統的指令！之前有提過，在 Linux 下面，每一個裝置都是一個檔案（或目錄），而每一種裝置的檔案型態都不相同，因此對於 mount 後面加的參數就很重要囉：例如：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# mount -t iso9660 /dev/cdrom /mnt/cdrom<span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;=光碟</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# mount -t vfat /dev/fd0 /mnt/floppy    <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;=軟碟(windows 系統檔)</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# mount -t ext2 /dev/fd0 /mnt/floppy    <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;=軟碟(Linux 系統檔)</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# mount -t ext2 /dev/hdc1 /mnt/harddisk <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;=硬碟</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<span color="#3333FF" style="color: #3333ff;">光碟裝置檔=/dev/cdrom、軟碟裝置檔=/dev/fd0、硬碟裝置檔=/dev/hdxx。</span><br/>如上表所示， -t 是參數，至於 iso9660, vfat, ext2則是這些裝置的檔案型態！後面接的則是這個裝置所在的目錄！千萬記得，這些目錄需要是早已存在的，而且最好是空的目錄，不然目錄裡面原本存在的檔案會不見去！<br/>另外，注意喔！當你 mount 上光碟機或軟碟的時候，請不要輕易的拿出磁片（而且光碟片也不會被你退出），因為會造成系統讀取的錯誤！你應該用 umount 來退出！指令為<br/><span color="#000066" style="color: #000066;">umount  /mnt/cdrom  （umount  裝置所在目錄）</span></blockquote>
+<a name="fdformat"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">fdformat</span></span></span>
+<blockquote>這是用來『<span color="#000066" style="color: #000066;">低階格式化</span>』軟碟的指令。（注意：軟碟的裝置檔為<span> </span><span color="#3333FF" style="color: #3333ff;">/dev/fd0</span><span> </span>）不必將軟碟 mount 就可以格式化了，指令內容為：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# fdformat /dev/fd0H1440</span></span></td>
+</tr>
+</tbody>
+</table>
+注意喔！在上面的裝置檔案為<span> </span><span color="#3333FF" style="color: #3333ff;">/dev/fd0H1440</span><span> </span>，其中加在 /fd0 之後的<span> </span><span color="#3333FF" style="color: #3333ff;">H1440</span><span> </span>為表示<span> </span><span color="#3333FF" style="color: #3333ff;">1.44MB</span><span> </span>的軟碟容量！在低階格式化之後，還要將軟碟的檔案格式化為 Linux 的 ext2 之型態，則需要使用<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#mke2fs">mke2fs</a><span> </span>指令！</blockquote>
+<a name="fdisk"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">fdisk</span></span></span>
+<blockquote>這是對硬碟（也可以對軟碟喔）做分割的程式。基本的用法為=&gt;<span> </span><span color="#000066" style="color: #000066;">fdisk 裝置檔案</span>，假設您有一顆硬碟要重新規劃，而這顆硬碟為 hdc ，則你可以輸入：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# fdisk /dev/hdc</span></span></span></td>
+</tr>
+</tbody>
+</table>
+然後，按下 m 會出現 help 的選單，要知道的大概只有兩個子指令，一個是刪除 partition 按 d ，一個是增加 partition 按 n，假設你要增加一個 primary partition，按下 n 再按 p 再按你要的 primary partition 號碼（1-4）就可以了。假設你的 hdc 需要規劃成為一個硬碟（即 hdc1）則在輸入 fdisk /dev/hdc 後，需要按：<br/><span color="#3333FF" style="color: #3333ff;">n</span>（增加） -&gt;<span> </span><span color="#3333FF" style="color: #3333ff;">p</span>（primary partition） -&gt;<span color="#3333FF" style="color: #3333ff;"><span> </span>1</span>（partition 1） -&gt;<span color="#3333FF" style="color: #3333ff;"><span> </span>w</span><span> </span>（儲存寫入） -&gt;<span> </span><span color="#3333FF" style="color: #3333ff;">q</span><span> </span>（離開）<br/>同樣的，分割完硬碟（或軟碟）後，要以<span> </span><a href="https://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php#mke2fs">mke2fs</a><span> </span>格式化！</blockquote>
+<a name="mke2fs"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">mke2fs</span></span></span>
+<blockquote>這是用來將磁碟格式化成 Linux 系統檔的指令。基本上，只要寫入對的裝置檔案就可以了。例如我們要格式化軟碟的話，或是新的硬碟 hdc1 ，則可以如此寫：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# mke2fs -c /dev/fd0</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# mke2fs -c /dev/hdc1</span></span></span></td>
+</tr>
+</tbody>
+</table>
+要記得的是，在你做這個格式化的動作時，軟碟與硬碟均不可 mount 到 Linux 的系統中。</blockquote>
+<a name="mkbootdisk"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">mkbootdisk</span></span></span>
+<blockquote>這是製作開機磁片的指令。指令很簡單：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# mkbootdisk --device /dev/fd0 `uname -r`</span></span></span></td>
+</tr>
+</tbody>
+</table>
+其中， `uname -r` 是目前 Linux 系統所使用的核心版本，如果你有多個核心版本的話，你以可以直接輸入核心版本。例如在這個網頁中所使用的核心有兩個版本，一個是 2.2.12-20，另一個是 2.2.18，若要以 2.2.18 設定開機的話，可以使用：<span color="#000066" style="color: #000066;"><span> </span>mkbootdisk  --device  /dev/fd0  2.2.18<span> </span></span>！</blockquote>
+<a name="badblocks"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">badblocks</span></span></span>
+<blockquote>這是用來檢查硬碟或軟碟有沒有壞軌的指令，你可以用底下的方式來下達：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]# badblocks  -svw  /dev/hdc1</span></span></span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<a name="fsck"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">fsck</span></span></span>
+<blockquote>這是用來檢查與修正硬碟錯誤的指令。<span color="#000066" style="color: #000066;">注意：通常只有身為 root 且你的系統有問題的時候才使用這個指令，否則在正常狀況下使用此一指令，可能會造成對檔案的危害</span>！<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span color="#FFFFFF" style="color: #ffffff;"><span size="-1">[root@tsai /root]#  fsck  /dev/hdc1</span></span></span></td>
+</tr>
+</tbody>
+</table>
+通常使用這個指令的場合都是在系統出現極大的問題，導致你在 Linux 開機的時候得進入單人單機模式下進行維護的行為時，才必須使用此一指令！</blockquote>
+<a name="rpm"></a><span face="Times New Roman Baltic" style="font-family: 'Times New Roman Baltic';"><span color="#3333FF" style="color: #3333ff;"><span size="+1" style="font-size: xx-small;">rpm</span></span></span>
+<blockquote>這是一個安裝或者是解安裝 RedHat 軟體的指令，在 RedHat 中已經有設定了一些有點像 Windows 的軟體安裝功能，這就是 rpm 這套軟體了！而 rpm 所安裝的軟體又分為兩種形式，因此你可以分別使用下面兩種參數對不同的檔案進行安裝：<br/> 
+<table bgcolor="#000000" cols="1" width="90%">
+<tbody>
+<tr>
+<td><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# rpm  -ivh  xxxxx.rpm <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==將 xxxxx.rpm 檔案安裝於 Linux 系統中</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# rpm  -ivh  --nodeps xxxxx.rpm <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==將 xxxxx.rpm 檔案『強制』安裝於 Linux 系統中</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# rpm  -Uvh  xxxxx.rpm <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==將 xxxxx.rpm 升級</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# rpm  -e    xxxxx.rpm <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==將 xxxxx.rpm 解除安裝</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# rpm  -q    squid <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==察看 squid 這一個軟體的版本</span></span></span><br/><span face="細明體" style="font-family: 細明體;"><span size="-1"><span color="#FFFFFF" style="color: #ffffff;">[root@tsai /root]# rpm  --recompile  yyyyy.src.rpm <span> </span></span><span color="#FFFF00" style="color: #ffff00;">&lt;==安裝檔名為 .src.rpm 的檔案！</span></span></span></td>
+</tr>
+</tbody>
+</table>
+這裡要注意的是， rpm 的檔案主要有兩種形式，一種是已經經過編譯的 i386.rpm 檔案，令一種是未經編譯的 .src.rpm 檔案，兩種檔案形式的安裝參數是不一樣的，請小心注意！</blockquote>
+</blockquote>
+<p><a name="systemman"></a></p>
+<br />Linux << <a href='Linux.html'>Previous</a> <a href='系統管理員.html'>Next</a> >> 系統管理員</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
