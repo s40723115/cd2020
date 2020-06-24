@@ -47,13 +47,14 @@
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.10">## 40723115期末報告
 
-### KMOLab
+
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by 40723115
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+[40723115倉儲](https://s40723115.github.io/cd2020/content/index.html)
+[小組倉儲](https://s40723114.github.io/cd2020ag1/content/index.html)
 
 
 </t>
