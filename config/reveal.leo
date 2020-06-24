@@ -97,7 +97,7 @@ Created by 40723115
 </t>
 <t tx="leo.20180902120523.15"># py38
 
-&lt;a&gt; herf="https://s40723115.github.io/cd2020/content/python%EF%BC%93%EF%BC%98%EF%BC%92%E6%9B%B4%E6%96%B0.html"&gt;github&lt;/a&gt;
+&lt;iframe src="https://s40723115.github.io/cd2020/content/python%EF%BC%93%EF%BC%98%EF%BC%92%E6%9B%B4%E6%96%B0.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;
 
 
 
@@ -116,33 +116,10 @@ Created by 40723115
 
 						
 </t>
-<t tx="leo.20180902120523.17">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+<t tx="leo.20180902120523.17">## ASSIGNMENT1
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+
+&lt;iframe src="https://s40723115.github.io/cd2020/content/assignment%201.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
