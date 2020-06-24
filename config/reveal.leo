@@ -97,16 +97,7 @@ Created by 40723115
 </t>
 <t tx="leo.20180902120523.15"># py38
 
-首先到" https://www.python.org/downloads/release/python-382/ "下載Window x86-64 executable installer，下載完後，執行python-3.8.2-amd64.exe 
-選Customize installation，再uncheck pip option，就可以繼續安裝置完成。
-進入安裝號的對應目錄複製檔案到 " 201906_fall/data"
-SciTE下載: 從 " https://www.scintilla.org/SciTEDownload.html " 下載 " full 64-bit download " 載完病解壓縮後，搬移至data下(有需要的話)，接著到相應的目錄執行SciTE.exe，開啟後到 OPTION&gt;&gt;&gt;OPEN GLOBAL OPTION FILE進行切換到UTF-8編碼即開啟即時更新:                                                                                                            將code.page=0更改成code.page=65001(切換到UTF-8編碼)                                      將#load.on.activate=1的井字號拿掉(開啟即時更新)，儲存，關閉SciTE。 
-ＭＳＹＳ２下載：https://www.msys2.org/ 　下載msys2-x86_64-20190524.exe 並執行　，點選Ｂｒｏｗｓｅ，選擇２０１９０６＿ｆａｌｌ／ｄａｔａ後，就可開始安裝，安裝結束後，ｕｎｃｈｅｃｋRun MSYS2 64bit now，結束下載流程。
-protablegit下載:https://git-scm.com/download/win 下載 64-bit Git for WindowsPortable安裝在data目錄下
-pip下載:到https://bootstrap.pypa.io/get-pip.py頁面，滑鼠右鍵另存新檔到CD2020/data執行，到cmd 輸入python get-pip.py開始下載，下載完成後輸入pip，測試pip是否正常運行。
-下載可在python使用的模組flask,bs4,xml,elican, mrkdown,flask_cors,leo，指令為pip install flask bs4 lxml pelican markdown flask_cors leo
-git clone 整個倉儲到 data 目錄下並命名目錄為 tmp
-putty下載:下載putty放到data裡面，把之前的ssh和.gitconfig放到home裡面測試是否可以成功用ssh推送資料。
+&lt;a&gt; herf="https://s40723115.github.io/cd2020/content/python%EF%BC%93%EF%BC%98%EF%BC%92%E6%9B%B4%E6%96%B0.html"&gt;github&lt;/a&gt;
 
 
 
