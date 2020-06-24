@@ -37,6 +37,9 @@
 <v t="leo.20200624101649.1"><vh>COVID-19</vh>
 <v t="leo.20200624101653.1"><vh>newHeadline</vh></v>
 </v>
+<v t="leo.20200624102335.1"><vh>VirtualBox</vh>
+<v t="leo.20200624102407.1"><vh>newHeadline</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -317,5 +320,14 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200624101653.1">## COVID-19
 
 &lt;iframe src="https://s40723115.github.io/cd2020/content/COVID-19.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200624102335.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200624102407.1">## VirtualBox
+
+&lt;iframe src="https://s40723115.github.io/cd2020/content/VirtualBox.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
