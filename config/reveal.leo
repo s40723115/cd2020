@@ -32,7 +32,12 @@
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
 <v t="leo.20180902120523.18"><vh>導入影片</vh>
-<v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
+<v t="leo.20200624101414.1"><vh>導入影片</vh>
+<v t="leo.20200624101414.2"><vh>iframe 導入影片</vh></v>
+</v>
+</v>
+<v t="leo.20200624101649.1"><vh>COVID-19</vh>
+<v t="leo.20200624101653.1"><vh>newHeadline</vh></v>
 </v>
 </v>
 </v>
@@ -129,10 +134,6 @@ Created by 40723115
 
 
 						
-</t>
-<t tx="leo.20180902120523.19"> # ASSIGNMENT2
-
-&lt;iframe src="https://s40723115.github.io/cd2020/content/assignment%202.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
@@ -304,5 +305,22 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20200624101414.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624101414.2"> # ASSIGNMENT2
+
+&lt;iframe src="https://s40723115.github.io/cd2020/content/assignment%202.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20200624101649.1"></t>
+<t tx="leo.20200624101653.1">## COVID-19
+
+&lt;iframe src="https://s40723115.github.io/cd2020/content/COVID-19.html" width="640" height="492" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
